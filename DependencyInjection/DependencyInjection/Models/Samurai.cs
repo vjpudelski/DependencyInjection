@@ -8,10 +8,13 @@ namespace DependencyInjection.Models
 {
     public class Samurai
     {
+        public List<IItem> Items { get; set; } 
+
         readonly IWeapon weapon;
         public Samurai(IWeapon weapon)
         {
             this.weapon = weapon;
+            Items = new List<IItem>();
         }
 
         public void Attack(string target)

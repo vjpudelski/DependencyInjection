@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\IItem.cs" />
     <Compile Include="Models\IWeapon.cs" />
+    <Compile Include="Models\Ration.cs" />
     <Compile Include="Models\Samurai.cs" />
     <Compile Include="Models\Shuriken.cs" />
     <Compile Include="Models\Sword.cs" />

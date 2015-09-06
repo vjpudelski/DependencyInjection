@@ -16,7 +16,7 @@ namespace DependencyInjection
             warrior1.Attack("the evildoers");
             warrior2.Attack("the evildoers");
 
-            warrior1.Items.Add(new Ration());
+            warrior1.PickupItem(new Ration());
             warrior1.Items[0].Use();
 
             Console.ReadLine();

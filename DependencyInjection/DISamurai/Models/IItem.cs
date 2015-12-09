@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DependencyInjection.Models
+namespace DISamurai.Models
 {
-    public interface IWeapon
+    public interface IItem
     {
-        void Hit(string target);
+        void Use();
     }
 }

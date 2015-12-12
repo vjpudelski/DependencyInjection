@@ -18,9 +18,6 @@ namespace DINinject
 
             samurai.Attack("the evildoers");
 
-            kernel.Bind<IItem>().To<Ration>();
-            var samurai2 = kernel.Get<Samurai>();
-
             Console.ReadLine();
         }
     }

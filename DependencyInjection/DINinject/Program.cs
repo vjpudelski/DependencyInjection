@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DINinject.Models;
 using DISamurai.Models;
 using Ninject;
 
@@ -20,6 +21,20 @@ namespace DINinject
 
             kernel.Bind<IItem>().To<Ration>();
             var samurai2 = kernel.Get<Samurai>();
+
+            StandardKernel kernel2 = new StandardKernel();
+            kernel2.Bind<IWeapon>().To<Shuriken>();
+            kernel2.Bind<IItem>().To<Ration>();
+            var ninja = kernel2.Get<Ninja>();
+
+            StandardKernel kernel3 = new StandardKernel(new NinjaModule());
+            var ninja2 = kernel3.Get<Ninja>();
+
+            StandardKernel kernel4 = new StandardKernel();
+            kernel4.Bind<IWeapon>().To<Shuriken>();
+            kernel4.Bind<IItem>().To<Ration>();
+            kernel4.Bind<IItem>().To<Ration>();
+            var ninja3 = kernel4.Get<Ninja>();
 
             Console.ReadLine();
         }

@@ -8,22 +8,22 @@ using Ninject;
 
 namespace DINinject.Models
 {
-    class Ninja
+    public class Ninja
     {
         [Inject]
-        public IWeapon _weapon { get; set; }
+        public IWeapon Weapon { get; set; }
 
         public void Attack(string target)
         {
-            _weapon.Hit(target);
+            Weapon.Hit(target);
         }
 
         private List<IItem> _items = new List<IItem>();
 
         [Inject]
-        public void PickupItem(IItem item)
+        public void PickupItem(IItem[] items)
         {
-            _items.Add(item);
+            _items.AddRange(items);
         }
     }
 }

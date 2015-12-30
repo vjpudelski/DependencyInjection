@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DINinject", "DINinject\DINi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DISamurai", "DISamurai\DISamurai.csproj", "{DCB2460D-5A77-48E0-B091-0B164DA51884}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIUnity", "DIUnity\DIUnity.csproj", "{51BFCF2F-8771-49D7-A7FB-EE6E8DB732B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DCB2460D-5A77-48E0-B091-0B164DA51884}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCB2460D-5A77-48E0-B091-0B164DA51884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCB2460D-5A77-48E0-B091-0B164DA51884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BFCF2F-8771-49D7-A7FB-EE6E8DB732B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BFCF2F-8771-49D7-A7FB-EE6E8DB732B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BFCF2F-8771-49D7-A7FB-EE6E8DB732B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BFCF2F-8771-49D7-A7FB-EE6E8DB732B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

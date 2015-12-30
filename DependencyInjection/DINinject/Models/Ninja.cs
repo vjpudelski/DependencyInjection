@@ -13,11 +13,6 @@ namespace DINinject.Models
         [Inject]
         public IWeapon Weapon { get; set; }
 
-        public void Attack(string target)
-        {
-            Weapon.Hit(target);
-        }
-
         private List<IItem> _items = new List<IItem>();
 
         [Inject]

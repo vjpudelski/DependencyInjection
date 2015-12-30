@@ -27,14 +27,15 @@ namespace DINinject
             kernel2.Bind<IItem>().To<Ration>();
             var ninja = kernel2.Get<Ninja>();
 
-            StandardKernel kernel3 = new StandardKernel(new NinjaModule());
+            StandardKernel kernel3 = new StandardKernel();
+            kernel3.Bind<IWeapon>().To<Shuriken>();
+            kernel3.Bind<IItem>().To<Ration>();
+            kernel3.Bind<IItem>().To<Ration>();
             var ninja2 = kernel3.Get<Ninja>();
 
-            StandardKernel kernel4 = new StandardKernel();
-            kernel4.Bind<IWeapon>().To<Shuriken>();
-            kernel4.Bind<IItem>().To<Ration>();
-            kernel4.Bind<IItem>().To<Ration>();
+            StandardKernel kernel4 = new StandardKernel(new NinjaModule());
             var ninja3 = kernel4.Get<Ninja>();
+
 
             Console.ReadLine();
         }

@@ -26,6 +26,13 @@ namespace DIUnity
             // overriding the parameter of the constructor.
             var samurai2 = container2.Resolve<Samurai>(new ParameterOverride("weapon", new Sword()));
 
+            var container3 = new UnityContainer();
+            container3.RegisterType<IWeapon, Sword>();
+            
+            InjectionMethod injectionMethod = new InjectionMethod("PickupItem", new Ration());
+            container3.RegisterType<Samurai>(injectionMethod);
+            var samurai3 = container3.Resolve<Samurai>();
+
             Console.ReadLine();
         }
     }
